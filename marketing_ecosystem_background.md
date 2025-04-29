@@ -2,7 +2,8 @@
 
 
 * Marketing metrics usually come from a variety of sources. 
-The below section will briefly outline what they are, & how or when they are integrated into a global business intelligence source of truth i.e. a Data Visualization Platform
+
+* The below section will briefly outline what they are, & how or when they are integrated into a global business intelligence source of truth i.e. a Data Visualization Platform
 
 
 * As a general rule, marketing data is the messiest data there is, because unlike product data that appears as rendered key value pairs entered by developers, the frequency of campaign deployments makes them subject to poor data integrity because all dimension data must be manually configured.
@@ -26,10 +27,10 @@ The below section will briefly outline what they are, & how or when they are int
 * Rule of thumb, general business communication to customers can be made by segmenting analytics user level data at url path 3 or url path 4 depending on the site content detail.
 
 
-• Url path 3 or 4 are good starters, because segments must be sufficient in volume, in order to be worth the time/resource to create a campaign for. Url paths 3 and 4 are inclusive of the individual page paths. 
+* Url path 3 or 4 are good starters, because segments must be sufficient in volume, in order to be worth the time/resource to create a campaign for. Url paths 3 and 4 are inclusive of the individual page paths. 
 
-
-The url path captures the interest of the user/customer whilst the action/event will signal their intent on that topic
+* The url path captures the interest of the user/customer whilst the action/event will signal their intent on that topic
+  
 * You can't, or really you SHOULD NOT guess & make inferences about marketing data, or site analytics data in general just by looking at the account structure. Instead talk to your media team to understand why campaigns were set up in a certain way and your web developer team to understand how the tagging was configured. You will not be able to make sense of anything without a data dictionary- especially for web analytics if you yourself do not have access to the tag configuration, you won't understand what the metrics actually mean, they are customized to capture different events and the labeling is also custom manual entry.
 
 
@@ -101,13 +102,19 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-* The purpose of CM is to create a campaign audit and reconcile what was booked with what was delivered from the publisher's platform (Ad platform, DFP and or DSPs) to ensure accuracy
+   * The purpose of CM is to create a campaign audit and reconcile what was booked with what was delivered from the publisher's platform (Ad platform, DFP and or DSPs) to ensure accuracy
+     
    * Ad ops team will create CM click & impressions trackers (floodlights) in DCM and give them to Ad ops team to place in platforms usually seen as 1x1 media buy/placement.
+
    * The impressions and click trackers allow CM to break down conversions by post impression and post click. Total conversions sums the two, but depending on the business, you post click and post impression broken out.
+
    * The advantage of CM is that it accounts for impression tracking (conversions made from serving (seeing) the ad but not clicking on the link) which web analytics cannot account for.
+
    * Although click through conversions are generally accepted as showing greater intent, post impression conversions can be useful to understand campaigns whose purpose is to generate awareness by targeting page lands
+
    * Conversions have recognised look back windows to when to stop attributing to conversion the campaign, default is generally 90 days but you can always custom configure
- * CM can also track revenue, just enable the revenue tracking alongside counter tracking. 
+ 
+   * CM can also track revenue, just enable the revenue tracking alongside counter tracking. 
 
 
 
@@ -118,17 +125,26 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 * Depending on the business type, web/app analytics can be used to track different things, Ad Manager trackers, Ad platform trackers e.g. facebook pixel need to be given to the Web developer to implement on the website/app to make sure things like site conversions are tracked
+
 * It is almost always the source of truth for visits, and marketing leads (sign ups)
+
 * If the site is ecommerce it can also be the source of truth for revenue
+
 * Depending on the business it is also of often the primary generator of clickstream data, though some businesses like to process their data for click stream data in mixpanel or amplitude etc
+
 * Campaign activity is tracked by appending the relevant utm parameters and campaign hierarchy values to the landing page url of ads
+
    * CM & SA360 and Google Ads are all auto tagged in Google Analytics as DFA, Dart
 
 
 * Analytics data is based on sessions - usually 30 min window from openinning to no activity, or till the application is closed
+
 * Session data feeds up into cookie ID which is a unique tracker, usually based off device ID, that acts a proxy for a user, also expires in 90 days
+
 * User id is the registered id generated for user who has signed up to your business, usually identified by a email or phone number depending on how they signed up, a user can have multiple cookies depending on the number of devices they have or if they have cleared their cache
-* Reports are pulled with last click attribution, so dimension attributed to a metric will be whatever last product/segment/feature they interacted with, so the time segment of reports is important, depending on the type of activity... e.g. for streaming platforms it might be better to have hourly data, because users are likely to browse more than 1 show (video plays) during a session, same for ecom depending on complexity. Pulling by day will show you the last touch page for the customer that day for a specific action/interaction.
+
+* Reports are pulled with last click attribution, so dimension attributed to a metric will be whatever last product/segment/feature they interacted with, so the time segment of reports is important, depending on the type of activity... e.g. for streaming platforms it might be 
+better to have hourly data, because users are likely to browse more than 1 show (video plays) during a session, same for ecom depending on complexity. Pulling by day will show you the last touch page for the customer that day for a specific action/interaction.
 
 
 #### Salesforce Core/CRMs/Marketo  2nd most common source of truth <br/>
@@ -147,7 +163,7 @@ CRMS are confusing because they have the word marketing in them, but generally t
    * revenue
    * call
    * emails (sends, opens, clicks ect)
-Tasks 
+   * tasks 
 
 
 * Metrics are broken out by business units for large enough businesses and individual sales agents, the campaign (whatever pitch they are pitching) and the contact details and interactions logs of leads and acquired accounts
@@ -159,4 +175,6 @@ Tasks
 * What metrics end up in the sales reporting section of the Business Intelligence platform is entirely dependent on the campaign objective that was briefed in, the type of business and where you sit in sales funnel
 
 
+### Key take ways
 
+* You must be breifed what metrics and dimenions to include in the reporting by the media team or sales agent, or web developer who ever set up the campaign. Who ever set up the campaign dictates the campaign strategey which is what the results of the dashboard reflect and be able to answer the aims of the campaign - reiterated as questions. 
