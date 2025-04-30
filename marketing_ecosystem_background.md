@@ -1,4 +1,4 @@
-### Marketing ecosystem reporting general break down
+# Marketing ecosystem reporting general break down
 
 
 
@@ -77,7 +77,7 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-#### AdServers (Must have source of Truth)
+### AdServers (Must have source of Truth)
 
 
 
@@ -108,7 +108,7 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-#### DSPs  (Must have source of Truth if running)
+### DSPs  (Must have source of Truth if running)
 
 
 * Most common DSP is DV360
@@ -133,7 +133,7 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-##### Campaign manager (CM) <br/> 
+### Campaign manager (CM) <br/> 
 
 
 * For large companies and agencies, ads served in other platforms will also be trafficked in Google CM - the most commonly used Ads Manager. The placement level is called media buy in CM and is used interchangeably. 
@@ -178,10 +178,7 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-
-
-
-##### Web & App Analytics  <br/>
+### Web & App Analytics  <br/>
 
 
 * Depending on the business type, web/app analytics can be used to track different things, Ad Manager trackers, Ad platform trackers e.g. facebook pixel need to be given to the Web developer to implement on the website/app to make sure site conversions driven from them are accurately reflected/tracked
@@ -216,7 +213,7 @@ The url path captures the interest of the user/customer whilst the action/event 
 
 
 
-#### Salesforce Core/CRMs/Marketo  2nd most common source of truth <br/>
+### Salesforce Core/CRMs/Marketo  2nd most common source of truth <br/>
 
 
 * Depending on the business type, business that are generally B2B, utilize salesforce, mailchimp or marketo to create marketing campaign segments (develop personas and marketing messaging) from customer profiles based off demographics, recognised customer lifetime revenue, and sometimes other campaigns/product features they engaged with
